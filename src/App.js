@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactHookForms from "./component/ReactHookForms";
+
+/* Imports needed to use React redux toolkit*/
+import {Provider} from 'react-redux';
+import {store} from './store/stateStore';
+import ReactReduxToolkit from "./component/ReactReduxToolkit";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/*Wrap all components that need access to the application state store*/}
+        <Provider store={store}>
+            <ReactHookForms></ReactHookForms>
+            <ReactReduxToolkit></ReactReduxToolkit>
+        </Provider>
     </div>
   );
 }
