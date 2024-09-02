@@ -14,6 +14,7 @@ import UseMemoHook from "./interviewPrepHooks/UseMemoHook";
 import UseEffectHook from "./interviewPrepHooks/UseEffectHook";
 import {RenderProps, PropComponentFunction} from "./interviewPrepHooks/RenderProps";
 import UseRefHook from "./interviewPrepHooks/UseRefHook";
+import {Routing, NavList} from "./routing/Routing";
 
 function App() {
   return (
@@ -27,13 +28,16 @@ function App() {
             {/*<ReactHooks />*/}
             {/*<ReactUseMemo/>*/}
 
-            <UseReduceHook />
-            <UseStateHook/>
-            <UseMemoHook />
-            <UseRefHook/>
-            <UseEffectHook/>
+            {/*<UseReduceHook />*/}
+            {/*<UseStateHook/>*/}
+            {/*<UseMemoHook />*/}
+            {/*<UseRefHook/>*/}
+            {/*<UseEffectHook/>*/}
 
             {/*<RenderProps render={PropComponentFunction}></RenderProps>*/}
+
+            <NavList/>
+            <Routing />
 
 
         </Provider>
