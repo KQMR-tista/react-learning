@@ -30,8 +30,8 @@ function App() {
             <UseReduceHook />
             <UseStateHook/>
             <UseMemoHook />
-            <UseEffectHook/>
             <UseRefHook/>
+            <UseEffectHook/>
 
             {/*<RenderProps render={PropComponentFunction}></RenderProps>*/}
 
